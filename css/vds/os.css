@@ -1,0 +1,77 @@
+.os-section {
+    padding: 80px 0;
+}
+
+.os-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 24px;
+}
+
+.os-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.os-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary);
+}
+
+.os-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 16px;
+}
+
+.os-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.os-version {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.os-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.os-tab {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.os-tab:hover {
+    color: var(--text);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.os-tab.active {
+    color: var(--text);
+    background: rgba(37, 99, 235, 0.1);
+}
+
+@media (max-width: 640px) {
+    .os-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .os-tabs {
+        flex-wrap: wrap;
+    }
+} 

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виртуальные серверы — aёtix</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/vds/hero.css">
+    <link rel="stylesheet" href="css/vds/locations.css">
+    <link rel="stylesheet" href="css/vds/tariffs.css">
+    <script src="js/vds/locations.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">aёtix</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">услуги <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="vds.html" class="dropdown-item active">
+                            <span class="dropdown-icon">🌐</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">облачные серверы (VDS)</div>
+                                <div class="dropdown-description">современные процессоры и NVMe SSD</div>
+                            </div>
+                        </a>
+                        <a href="hicpu2.html" class="dropdown-item">
+                            <span class="dropdown-icon">⚡</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">high-cpu серверы</div>
+                                <div class="dropdown-description">невероятно быстрые и мощные</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">информация <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="contacts.html" class="dropdown-item">
+                            <span class="dropdown-icon">📞</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">контакты</div>
+                                <div class="dropdown-description">связаться с нами</div>
+                            </div>
+                        </a>
+                        <a href="cabinet.html" class="dropdown-item">
+                            <span class="dropdown-icon">👤</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">личный кабинет</div>
+                                <div class="dropdown-description">управление услугами и настройками</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="burger-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <div class="nav-mobile" id="navMobile">
+                <div class="nav-right">
+                    <div class="auth-buttons">
+                        <a href="#" class="nav-item">Вход</a>
+                        <span class="separator">/</span>
+                        <a href="#" class="nav-item">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="vds-hero">
+            <div class="vds-hero-content">
+                <h1>виртуальные серверы</h1>
+                <p class="vds-hero-description">виртуальные серверы на мощных процессорах AMD<br>и NVMe SSD накопителях</p>
+                <div class="vds-hero-form">
+                    <input type="email" placeholder="эл. почта" class="vds-email-input">
+                    <button class="vds-register-button">зарегистрироваться</button>
+                </div>
+                <div class="vds-social-links">
+                    <a href="#" class="vds-social-link">
+                        <img src="images/github.svg" alt="GitHub">
+                    </a>
+                    <a href="#" class="vds-social-link">
+                        <img src="images/google.svg" alt="Google">
+                    </a>
+                    <a href="#" class="vds-social-link">
+                        <img src="images/discord.svg" alt="Discord">
+                    </a>
+                    <a href="#" class="vds-social-link">
+                        <img src="images/yandex.svg" alt="Yandex">
+                    </a>
+                </div>
+            </div>
+            <div class="vds-hero-image">
+                <img src="images/cloud.svg" alt="Cloud Server">
+            </div>
+        </section>
+
+        <section class="vds-locations">
+            <div class="locations-list">
+                <a href="#" class="location active" data-country="us">🇺🇸 Денвер</a>
+                <a href="#" class="location" data-country="gb">🇬🇧 Лондон</a>
+                <a href="#" class="location" data-country="fr">🇫🇷 Париж</a>
+                <a href="#" class="location" data-country="nl">🇳🇱 Амстердам</a>
+                <a href="#" class="location" data-country="de">🇩🇪 Франкфурт</a>
+                <a href="#" class="location" data-country="at">🇦🇹 Вена</a>
+                <a href="#" class="location" data-country="se">🇸🇪 Стокгольм</a>
+                <a href="#" class="location" data-country="fi">🇫🇮 Хельсинки</a>
+                <a href="#" class="location" data-country="ru">🇷🇺 Москва</a>
+                <a href="#" class="location" data-country="ru">🇷🇺 Санкт-Петербург</a>
+            </div>
+        </section>
+
+        <section class="vds-tariffs">
+            <div class="tariff-content">
+                <div class="tariff-header">
+                    <div class="tariff-type">
+                        <span class="tariff-label">для чего?</span>
+                        <h2 class="tariff-name">Shared</h2>
+                    </div>
+                    <div class="tariff-specs">
+                        <div class="spec-item">
+                            <span>Процессор AMD Ryzen 9 7950X3D</span>
+                            <span>Частота 4.2-5.7 ГГц</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>Базовая DDoS-защита <a href="#" class="info-link">(?)</a></span>
+                        </div>
+                        <div class="spec-item">
+                            <span>1 адрес IPv4</span>
+                            <span>Интернет до 1 Гбит/с</span>
+                            <span>Трафик ∞</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tariff-plans">
+                    <div class="plan" data-plan="ALBs-1">
+                        <div class="plan-header">
+                            <span class="plan-name">ALBs-1</span>
+                            <div class="plan-specs">
+                                <span>1 core</span>
+                                <span>2 GB RAM</span>
+                                <span>30 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.02<span>/час</span></div>
+                            <div class="price-per-month">€4.94<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="ALBs-2">
+                        <div class="plan-header">
+                            <span class="plan-name">ALBs-2</span>
+                            <div class="plan-specs">
+                                <span>2 cores</span>
+                                <span>4 GB RAM</span>
+                                <span>60 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.03<span>/час</span></div>
+                            <div class="price-per-month">€9.89<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan popular" data-plan="ALBs-3">
+                        <div class="popular-badge">популярный</div>
+                        <div class="plan-header">
+                            <span class="plan-name">ALBs-3</span>
+                            <div class="plan-specs">
+                                <span>4 cores</span>
+                                <span>8 GB RAM</span>
+                                <span>120 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.05<span>/час</span></div>
+                            <div class="price-per-month">€19.77<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="ALBs-4">
+                        <div class="plan-header">
+                            <span class="plan-name">ALBs-4</span>
+                            <div class="plan-specs">
+                                <span>8 cores</span>
+                                <span>16 GB RAM</span>
+                                <span>240 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.13<span>/час</span></div>
+                            <div class="price-per-month">€39.55<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="ALBs-5">
+                        <div class="plan-header">
+                            <span class="plan-name">ALBs-5</span>
+                            <div class="plan-specs">
+                                <span>16 cores</span>
+                                <span>32 GB RAM</span>
+                                <span>480 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.10<span>/час</span></div>
+                            <div class="price-per-month">€79.09<span>/месяц</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tariff-notice">
+                <p>Некоторые тарифы недоступны для заказа в данный момент.</p>
+                <p>Приносим свои извинения и просим обратить внимание на другие локации.</p>
+            </div>
+        </section>
+
+        <section class="vds-tariffs">
+            <div class="tariff-content">
+                <div class="tariff-header">
+                    <div class="tariff-type">
+                        <span class="tariff-label">для чего?</span>
+                        <h2 class="tariff-name">Dedicated</h2>
+                    </div>
+                    <div class="tariff-specs">
+                        <div class="spec-item">
+                            <span>Процессор AMD Ryzen 9 7950X3D</span>
+                            <span>Частота 4.2-5.7 ГГц</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>Базовая DDoS-защита <a href="#" class="info-link">(?)</a></span>
+                        </div>
+                        <div class="spec-item">
+                            <span>1 адрес IPv4</span>
+                            <span>Интернет до 1 Гбит/с</span>
+                            <span>Трафик ∞</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tariff-plans">
+                    <div class="plan" data-plan="ALB-1">
+                        <div class="plan-header">
+                            <span class="plan-name">ALB-1</span>
+                            <div class="plan-specs">
+                                <span>1 core</span>
+                                <span>2 GB RAM</span>
+                                <span>30 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.03<span>/час</span></div>
+                            <div class="price-per-month">€7.07<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="ALB-2">
+                        <div class="plan-header">
+                            <span class="plan-name">ALB-2</span>
+                            <div class="plan-specs">
+                                <span>2 cores</span>
+                                <span>4 GB RAM</span>
+                                <span>60 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.05<span>/час</span></div>
+                            <div class="price-per-month">€14.15<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="ALB-3">
+                        <div class="plan-header">
+                            <span class="plan-name">ALB-3</span>
+                            <div class="plan-specs">
+                                <span>4 cores</span>
+                                <span>8 GB RAM</span>
+                                <span>120 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.09<span>/час</span></div>
+                            <div class="price-per-month">€28.28<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan popular" data-plan="ALB-4">
+                        <div class="popular-badge">популярный</div>
+                        <div class="plan-header">
+                            <span class="plan-name">ALB-4</span>
+                            <div class="plan-specs">
+                                <span>8 cores</span>
+                                <span>16 GB RAM</span>
+                                <span>240 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.17<span>/час</span></div>
+                            <div class="price-per-month">€56.55<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="ALB-5">
+                        <div class="plan-header">
+                            <span class="plan-name">ALB-5</span>
+                            <div class="plan-specs">
+                                <span>16 cores</span>
+                                <span>32 GB RAM</span>
+                                <span>480 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.28<span>/час</span></div>
+                            <div class="price-per-month">€112.81<span>/месяц</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tariff-notice">
+                <p>Некоторые тарифы недоступны для заказа в данный момент.</p>
+                <p>Приносим свои извинения и просим обратить внимание на другие локации.</p>
+            </div>
+        </section>
+
+        <section class="discounts-section">
+            <div class="discount-info">
+                скидка автоматически<br>
+                применится при<br>
+                оформлении заказа в ЛК
+            </div>
+            <div class="discount-items">
+                <div class="discount-item">
+                    <div class="discount-percent gray">5%</div>
+                    <div class="discount-description">при оплате от 3 месяцев</div>
+                </div>
+                <div class="discount-item">
+                    <div class="discount-percent white">9%</div>
+                    <div class="discount-description">при оплате от 6 месяцев</div>
+                </div>
+                <div class="discount-item">
+                    <div class="discount-percent orange">12%</div>
+                    <div class="discount-description orange">при оплате от 12 месяцев</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="os-section">
+            <h2 class="os-title">операционные системы</h2>
+            <div class="os-grid">
+                <div class="os-item">
+                    <img src="images/os/windows.svg" alt="Windows Server" class="os-icon">
+                    <div class="os-name">windows server</div>
+                    <div class="os-versions">2022, 2019, 2016, 2012 R2</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/ubuntu.svg" alt="Ubuntu" class="os-icon">
+                    <div class="os-name">ubuntu</div>
+                    <div class="os-versions">18.04, 20.04, 22.04</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/debian.svg" alt="Debian" class="os-icon">
+                    <div class="os-name">debian</div>
+                    <div class="os-versions">9, 10, 11, 12</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/centos.svg" alt="CentOS" class="os-icon">
+                    <div class="os-name">centos</div>
+                    <div class="os-versions">7, stream 8, stream 9</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/almalinux.svg" alt="AlmaLinux" class="os-icon">
+                    <div class="os-name">almalinux</div>
+                    <div class="os-versions">8, 9</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/rocky.svg" alt="Rocky Linux" class="os-icon">
+                    <div class="os-name">rockylinux</div>
+                    <div class="os-versions">8</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/freebsd.svg" alt="FreeBSD" class="os-icon">
+                    <div class="os-name">freebsd</div>
+                    <div class="os-versions">12, 13</div>
+                </div>
+                <div class="os-item">
+                    <img src="images/os/astra.svg" alt="Astra Linux" class="os-icon">
+                    <div class="os-name">astra linux</div>
+                    <div class="os-versions">CE</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="features-header">
+                <h2 class="features-title">почему наши серверы?</h2>
+                <div class="features-subtitle">только полезные функции, продуманное использование</div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/ddos.webp" alt="DDoS Protection" class="feature-image">
+                    <h3 class="feature-title">ddos-защита</h3>
+                    <p class="feature-description">до 2 Тбит/с трафика очистки, до 600 Гбит/с тонкой фильтрации. Защита включена в стоимость и работает постоянно</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/hourly.webp" alt="Hourly Billing" class="feature-image">
+                    <h3 class="feature-title">почасовая оплата</h3>
+                    <p class="feature-description">быстрые облачные серверы, масштабируются на лету. Заказывайте сколько хотите, платите только за то, что нужно</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/hardware.webp" alt="Modern Hardware" class="feature-image">
+                    <h3 class="feature-title">современное оборудование</h3>
+                    <p class="feature-description">современные процессоры AMD Ryzen, накопители в RAID до 10 Гбит/с и NVMe-SSD</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/api.webp" alt="API Management" class="feature-image">
+                    <h3 class="feature-title">простое управление и API</h3>
+                    <p class="feature-description">создание и работа с серверами в личном кабинете. Автоматизация управления с помощью REST API и удобная документация</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/backup.webp" alt="Backup" class="feature-image">
+                    <h3 class="feature-title">резервное копирование</h3>
+                    <p class="feature-description">будьте спокойны за сохранность своих данных. Резервное копирование доступно в пару кликов и стоит недорого</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h2 class="footer-column-title">О компании</h2>
+                    <a href="/" class="footer-logo">aëtix</a>
+                    <p class="footer-description">Надежный хостинг-провайдер с 2020 года</p>
+                    <div class="footer-company-info">
+                        <p>Aetix International LTD</p>
+                        <p>Рег. номер: 123456789</p>
+                        <p>347 Barking Road, London</p>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2 class="footer-column-title">Услуги</h2>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Виртуальные серверы</a>
+                        <a href="#" class="footer-link">Выделенные серверы</a>
+                        <a href="#" class="footer-link">Защита от DDoS</a>
+                        <a href="#" class="footer-link">Резервное копирование</a>
+                        <a href="#" class="footer-link">Мониторинг</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2 class="footer-column-title">Поддержка</h2>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">База знаний</a>
+                        <a href="#" class="footer-link">Статус серверов</a>
+                        <a href="#" class="footer-link">Тикет-система</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Блог</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2 class="footer-column-title">Контакты</h2>
+                    <div class="footer-links">
+                        <a href="tel:88002006013" class="footer-link">8 800 200-60-13</a>
+                        <a href="mailto:support@aetix.net" class="footer-link">support@aetix.net</a>
+                        <a href="#" class="footer-link">Telegram</a>
+                        <a href="#" class="footer-link">Twitter</a>
+                        <a href="#" class="footer-link">Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html> 

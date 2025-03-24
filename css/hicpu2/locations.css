@@ -1,0 +1,49 @@
+.hicpu-locations {
+    margin: 40px 0;
+}
+
+.locations-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.location {
+    padding: 8px 16px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 14px;
+    transition: var(--transition);
+}
+
+.location:hover {
+    background: var(--background-light);
+    border-color: var(--primary-light);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.location.active {
+    background: var(--gradient);
+    border-color: transparent;
+    color: white;
+}
+
+.location.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .locations-list {
+        gap: 8px;
+    }
+
+    .location {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+} 

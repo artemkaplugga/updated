@@ -1,0 +1,317 @@
+.hicpu-locations {
+    margin: 40px 0;
+}
+
+.hicpu-locations .locations-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.hicpu-locations .location {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.hicpu-locations .location:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hicpu-locations .location.active {
+    background: var(--primary);
+    color: white;
+}
+
+.vds-tariffs {
+    position: relative;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(56, 189, 248, 0.1) 100%);
+    border-radius: var(--radius-2xl);
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.tariff-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.vds-tariffs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(56, 189, 248, 0.15) 0%, transparent 50%);
+    z-index: 0;
+}
+
+.tariff-header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.tariff-type {
+    margin-bottom: 24px;
+}
+
+.tariff-label {
+    display: block;
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.tariff-name {
+    font-size: 32px;
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tariff-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-secondary);
+}
+
+.spec-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tariff-plans {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.plan {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 24px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.plan:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-lg);
+}
+
+.plan.popular {
+    background: var(--background-light);
+    border-color: var(--primary-light);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gradient);
+    color: white;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+}
+
+.plan-header {
+    margin-bottom: 24px;
+}
+
+.plan-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.plan-specs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.plan-price {
+    text-align: center;
+}
+
+.price-per-hour {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.price-per-hour span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.price-per-month {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.price-per-month span {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.tariff-notice {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 40px;
+    padding: 24px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    color: var(--text-secondary);
+}
+
+.discounts-section {
+    background: #000;
+    border-radius: 24px;
+    padding: 40px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount-info {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.discount-items {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.discount-item {
+    text-align: center;
+}
+
+.discount-percent {
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.discount-percent.gray {
+    color: #808080;
+}
+
+.discount-percent.white {
+    color: #fff;
+}
+
+.discount-percent.orange {
+    color: #FF6B00;
+}
+
+.discount-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.discount-description.orange {
+    color: #FF6B00;
+}
+
+@media (max-width: 1200px) {
+    .hicpu-tariffs .tariff-plans {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .hicpu-tariffs {
+        padding: 24px;
+    }
+
+    .tariff-content {
+        padding: 0 24px;
+    }
+
+    .hicpu-tariffs .tariff-specs {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .hicpu-tariffs .tariff-plans {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discounts-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hicpu-tariffs {
+        padding: 16px;
+    }
+
+    .tariff-content {
+        padding: 0 16px;
+    }
+
+    .hicpu-tariffs .tariff-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .discount-items {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hicpu-tariffs .tariff-plans {
+        grid-template-columns: 1fr;
+    }
+
+    .discounts-section {
+        flex-direction: column;
+        gap: 32px;
+        padding: 24px;
+    }
+
+    .discount-items {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .discount-percent {
+        font-size: 48px;
+    }
+} 

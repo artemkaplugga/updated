@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aёtix — Личный кабинет</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/cabinet.css">
+</head>
+<body>
+    <nav class="navbar navbar-index">
+        <div class="nav-container">
+            <a href="index.html" class="logo">aёtix</a>
+            <div class="nav-center">
+                <div class="dropdown">
+                    <a href="#" class="nav-item">услуги <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="vds.html" class="dropdown-item">
+                            <span class="dropdown-icon">🌐</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">облачные серверы (VDS)</div>
+                                <div class="dropdown-description">современные процессоры и NVMe SSD</div>
+                            </div>
+                        </a>
+                        <a href="hicpu2.html" class="dropdown-item">
+                            <span class="dropdown-icon">⚡</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">high-cpu серверы</div>
+                                <div class="dropdown-description">невероятно быстрые и мощные</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">информация <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="contacts.html" class="dropdown-item">
+                            <span class="dropdown-icon">📞</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">контакты</div>
+                                <div class="dropdown-description">связаться с нами</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="auth-buttons">
+                    <a href="#" class="nav-item">Выход</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="cabinet-header">
+            <div class="user-info">
+                <div class="user-avatar">👤</div>
+                <div class="user-details">
+                    <h2>Иван Иванов</h2>
+                    <p>ivan@example.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cabinet-grid">
+            <div class="cabinet-sidebar">
+                <div class="sidebar-menu">
+                    <a href="#services" class="menu-item active" data-tab="services">
+                        <span class="menu-icon">🖥️</span>
+                        <span>Управление услугами</span>
+                    </a>
+                    <a href="#orders" class="menu-item" data-tab="orders">
+                        <span class="menu-icon">📋</span>
+                        <span>История заказов</span>
+                    </a>
+                    <a href="#payments" class="menu-item" data-tab="payments">
+                        <span class="menu-icon">💳</span>
+                        <span>История платежей</span>
+                    </a>
+                    <a href="#support" class="menu-item" data-tab="support">
+                        <span class="menu-icon">❓</span>
+                        <span>Техподдержка</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cabinet-content">
+                <!-- Вкладка управления услугами -->
+                <div class="tab-content active" id="services">
+                    <div class="services-section">
+                        <h2>Мои услуги</h2>
+                        <div class="services-list">
+                            <div class="service-card">
+                                <div class="service-header">
+                                    <h3>VDS Сервер #1</h3>
+                                    <span class="status active">Активен</span>
+                                </div>
+                                <div class="service-info">
+                                    <p>CPU: 4 ядра</p>
+                                    <p>RAM: 8 GB</p>
+                                    <p>SSD: 120 GB</p>
+                                    <p>IP: 192.168.1.1</p>
+                                </div>
+                                <div class="service-actions">
+                                    <button class="btn btn-primary">Управление</button>
+                                    <button class="btn btn-secondary">Продлить</button>
+                                </div>
+                            </div>
+                            <div class="service-card">
+                                <div class="service-header">
+                                    <h3>High-CPU Сервер #1</h3>
+                                    <span class="status active">Активен</span>
+                                </div>
+                                <div class="service-info">
+                                    <p>CPU: 8 ядер</p>
+                                    <p>RAM: 16 GB</p>
+                                    <p>SSD: 240 GB</p>
+                                    <p>IP: 192.168.1.2</p>
+                                </div>
+                                <div class="service-actions">
+                                    <button class="btn btn-primary">Управление</button>
+                                    <button class="btn btn-secondary">Продлить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка истории заказов -->
+                <div class="tab-content" id="orders">
+                    <div class="orders-section">
+                        <h2>История заказов</h2>
+                        <div class="orders-list">
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <h3>Заказ #12345</h3>
+                                    <span class="status completed">Выполнен</span>
+                                </div>
+                                <div class="order-info">
+                                    <p>Дата: 15.03.2024</p>
+                                    <p>VDS Сервер Standard</p>
+                                    <p>Сумма: 2500 ₽</p>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn btn-secondary">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <h3>Заказ #12344</h3>
+                                    <span class="status completed">Выполнен</span>
+                                </div>
+                                <div class="order-info">
+                                    <p>Дата: 10.03.2024</p>
+                                    <p>High-CPU Сервер Pro</p>
+                                    <p>Сумма: 5000 ₽</p>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn btn-secondary">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка истории платежей -->
+                <div class="tab-content" id="payments">
+                    <div class="payments-section">
+                        <h2>История платежей</h2>
+                        <div class="payments-list">
+                            <div class="payment-card">
+                                <div class="payment-header">
+                                    <h3>Платёж #67890</h3>
+                                    <span class="status success">Успешно</span>
+                                </div>
+                                <div class="payment-info">
+                                    <p>Дата: 15.03.2024</p>
+                                    <p>Способ: Банковская карта</p>
+                                    <p>Сумма: 2500 ₽</p>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="btn btn-secondary">Квитанция</button>
+                                </div>
+                            </div>
+                            <div class="payment-card">
+                                <div class="payment-header">
+                                    <h3>Платёж #67889</h3>
+                                    <span class="status success">Успешно</span>
+                                </div>
+                                <div class="payment-info">
+                                    <p>Дата: 10.03.2024</p>
+                                    <p>Способ: PayPal</p>
+                                    <p>Сумма: 5000 ₽</p>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="btn btn-secondary">Квитанция</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вкладка техподдержки -->
+                <div class="tab-content" id="support">
+                    <div class="support-section">
+                        <h2>Техническая поддержка</h2>
+                        <div class="support-card">
+                            <div class="support-info">
+                                <h3>Обращения в поддержку</h3>
+                                <div class="ticket-list">
+                                    <div class="ticket">
+                                        <div class="ticket-header">
+                                            <h4>Тикет #34567</h4>
+                                            <span class="status open">Открыт</span>
+                                        </div>
+                                        <p>Проблема с подключением к серверу</p>
+                                        <p class="ticket-date">Создан: 15.03.2024</p>
+                                    </div>
+                                    <div class="ticket">
+                                        <div class="ticket-header">
+                                            <h4>Тикет #34566</h4>
+                                            <span class="status closed">Закрыт</span>
+                                        </div>
+                                        <p>Вопрос по оплате</p>
+                                        <p class="ticket-date">Создан: 10.03.2024</p>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary">Создать обращение</button>
+                            </div>
+                            <div class="support-contacts">
+                                <h3>Контакты поддержки</h3>
+                                <ul>
+                                    <li>Email: support@aetix.com</li>
+                                    <li>Телефон: 8-800-123-45-67</li>
+                                    <li>Telegram: @aetix_support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cabinet.js"></script>
+</body>
+</html> 

@@ -1,0 +1,164 @@
+.vds-hero {
+    position: relative;
+    padding: 80px 0;
+    background: var(--background-light);
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.vds-hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+    padding: 0 40px;
+}
+
+.vds-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: 1.2;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vds-hero-description {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin: 0 0 40px;
+    line-height: 1.6;
+}
+
+.vds-hero-form {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.vds-email-input {
+    flex: 1;
+    height: 48px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 0 20px;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.vds-email-input::placeholder {
+    color: var(--text-muted);
+}
+
+.vds-register-button {
+    height: 48px;
+    padding: 0 32px;
+    background: var(--gradient);
+    border: none;
+    border-radius: var(--radius-lg);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.vds-register-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.vds-social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.vds-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    transition: var(--transition);
+}
+
+.vds-social-link:hover {
+    transform: translateY(-2px);
+    background: var(--gradient);
+}
+
+.vds-social-link img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.vds-social-link:hover img {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+.vds-hero-image {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+}
+
+.vds-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .vds-hero-image {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .vds-hero-image {
+        display: none;
+    }
+    
+    .vds-hero-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .vds-hero {
+        padding: 40px 0;
+    }
+
+    .vds-hero-content {
+        padding: 0 20px;
+    }
+
+    .vds-hero h1 {
+        font-size: 36px;
+    }
+
+    .vds-hero-description {
+        font-size: 16px;
+    }
+
+    .vds-hero-form {
+        flex-direction: column;
+    }
+
+    .vds-register-button {
+        width: 100%;
+    }
+} 

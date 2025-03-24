@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-CPU серверы — aёtix</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hicpu2/hero.css">
+    <link rel="stylesheet" href="css/hicpu2/locations.css">
+    <link rel="stylesheet" href="css/hicpu2/tariffs.css">
+    <link rel="stylesheet" href="css/hicpu2/os.css">
+    <link rel="stylesheet" href="css/hicpu2/features.css">
+    <script src="js/hicpu/locations.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo">aёtix</a>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">услуги <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="vds.html" class="dropdown-item">
+                            <span class="dropdown-icon">🌐</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">облачные серверы (VDS)</div>
+                                <div class="dropdown-description">современные процессоры и NVMe SSD</div>
+                            </div>
+                        </a>
+                        <a href="hicpu2.html" class="dropdown-item active">
+                            <span class="dropdown-icon">⚡</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">high-cpu серверы</div>
+                                <div class="dropdown-description">невероятно быстрые и мощные</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" class="nav-item">информация <span class="dropdown-arrow">▼</span></a>
+                    <div class="dropdown-menu">
+                        <a href="contacts.html" class="dropdown-item">
+                            <span class="dropdown-icon">📞</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">контакты</div>
+                                <div class="dropdown-description">связаться с нами</div>
+                            </div>
+                        </a>
+                        <a href="cabinet.html" class="dropdown-item">
+                            <span class="dropdown-icon">👤</span>
+                            <div class="dropdown-content">
+                                <div class="dropdown-title">личный кабинет</div>
+                                <div class="dropdown-description">управление услугами и настройками</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <button class="burger-menu" aria-label="Открыть меню">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
+            <div class="nav-mobile" id="navMobile">
+                <div class="nav-right">
+                    <div class="auth-buttons">
+                        <a href="#" class="nav-item">Вход</a>
+                        <span class="separator">/</span>
+                        <a href="#" class="nav-item">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hicpu-hero">
+            <div class="hicpu-hero-content">
+                <h1>high-cpu серверы</h1>
+                <p class="hicpu-hero-description">Самые мощные виртуальные серверы на базе<br>уникальных AMD Ryzen Threadripper 3990X до 4.3 ГГц<br>или Intel Core i9-12900K и надежной DDoS-защитой</p>
+                <div class="hicpu-hero-form">
+                    <input type="email" placeholder="эл. почта" class="hicpu-email-input">
+                    <button class="hicpu-register-button">зарегистрироваться</button>
+                </div>
+                <div class="hicpu-social-links">
+                    <a href="#" class="hicpu-social-link">
+                        <img src="images/github.svg" alt="GitHub">
+                    </a>
+                    <a href="#" class="hicpu-social-link">
+                        <img src="images/google.svg" alt="Google">
+                    </a>
+                    <a href="#" class="hicpu-social-link">
+                        <img src="images/discord.svg" alt="Discord">
+                    </a>
+                    <a href="#" class="hicpu-social-link">
+                        <img src="images/yandex.svg" alt="Yandex">
+                    </a>
+                </div>
+            </div>
+            <div class="hicpu-hero-image">
+                <img src="images/cloud.svg" alt="High-CPU Server">
+            </div>
+        </section>
+
+        <section class="hicpu-locations">
+            <div class="locations-list">
+                <a href="#" class="location active" data-country="fr">🇫🇷 Париж</a>
+                <a href="#" class="location" data-country="de">🇩🇪 Франкфурт</a>
+            </div>
+        </section>
+
+        <section class="vds-tariffs">
+            <div class="tariff-content">
+                <div class="tariff-header">
+                    <div class="tariff-type">
+                        <span class="tariff-label">для чего?</span>
+                        <h2 class="tariff-name">Intel</h2>
+                    </div>
+                    <div class="tariff-specs">
+                        <div class="spec-item">
+                            <span>Процессор Intel Core i9-12900K</span>
+                            <span>Частота до 5.2 ГГц</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>Расширенная DDoS-защита <a href="#" class="info-link">(?)</a></span>
+                        </div>
+                        <div class="spec-item">
+                            <span>2 адреса IPv4</span>
+                            <span>Интернет до 10 Гбит/с</span>
+                            <span>Трафик ∞</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tariff-plans">
+                    <div class="plan" data-plan="HCP-I1">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-I1</span>
+                            <div class="plan-specs">
+                                <span>4 cores</span>
+                                <span>8 GB RAM</span>
+                                <span>120 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.08<span>/час</span></div>
+                            <div class="price-per-month">€19.77<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="HCP-I2">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-I2</span>
+                            <div class="plan-specs">
+                                <span>6 cores</span>
+                                <span>16 GB RAM</span>
+                                <span>240 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.12<span>/час</span></div>
+                            <div class="price-per-month">€29.66<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan popular" data-plan="HCP-I3">
+                        <div class="popular-badge">популярный</div>
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-I3</span>
+                            <div class="plan-specs">
+                                <span>8 cores</span>
+                                <span>32 GB RAM</span>
+                                <span>480 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.20<span>/час</span></div>
+                            <div class="price-per-month">€49.44<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="HCP-I4">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-I4</span>
+                            <div class="plan-specs">
+                                <span>12 cores</span>
+                                <span>64 GB RAM</span>
+                                <span>960 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.40<span>/час</span></div>
+                            <div class="price-per-month">€98.88<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="HCP-I5">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-I5</span>
+                            <div class="plan-specs">
+                                <span>16 cores</span>
+                                <span>128 GB RAM</span>
+                                <span>1920 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.80<span>/час</span></div>
+                            <div class="price-per-month">€197.76<span>/месяц</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vds-tariffs">
+            <div class="tariff-content">
+                <div class="tariff-header">
+                    <div class="tariff-type">
+                        <span class="tariff-label">для чего?</span>
+                        <h2 class="tariff-name">AMD</h2>
+                    </div>
+                    <div class="tariff-specs">
+                        <div class="spec-item">
+                            <span>Процессор AMD Ryzen Threadripper 3990X</span>
+                            <span>Частота до 4.3 ГГц</span>
+                        </div>
+                        <div class="spec-item">
+                            <span>Расширенная DDoS-защита <a href="#" class="info-link">(?)</a></span>
+                        </div>
+                        <div class="spec-item">
+                            <span>2 адреса IPv4</span>
+                            <span>Интернет до 10 Гбит/с</span>
+                            <span>Трафик ∞</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tariff-plans">
+                    <div class="plan" data-plan="HCP-A1">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-A1</span>
+                            <div class="plan-specs">
+                                <span>8 cores</span>
+                                <span>16 GB RAM</span>
+                                <span>240 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.15<span>/час</span></div>
+                            <div class="price-per-month">€37.21<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="HCP-A2">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-A2</span>
+                            <div class="plan-specs">
+                                <span>12 cores</span>
+                                <span>32 GB RAM</span>
+                                <span>480 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.25<span>/час</span></div>
+                            <div class="price-per-month">€62.02<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan popular" data-plan="HCP-A3">
+                        <div class="popular-badge">популярный</div>
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-A3</span>
+                            <div class="plan-specs">
+                                <span>16 cores</span>
+                                <span>64 GB RAM</span>
+                                <span>960 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.40<span>/час</span></div>
+                            <div class="price-per-month">€99.23<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="HCP-A4">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-A4</span>
+                            <div class="plan-specs">
+                                <span>24 cores</span>
+                                <span>128 GB RAM</span>
+                                <span>1920 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€0.80<span>/час</span></div>
+                            <div class="price-per-month">€198.46<span>/месяц</span></div>
+                        </div>
+                    </div>
+
+                    <div class="plan" data-plan="HCP-A5">
+                        <div class="plan-header">
+                            <span class="plan-name">HCP-A5</span>
+                            <div class="plan-specs">
+                                <span>32 cores</span>
+                                <span>256 GB RAM</span>
+                                <span>3840 GB NVMe</span>
+                            </div>
+                        </div>
+                        <div class="plan-price">
+                            <div class="price-per-hour">€1.60<span>/час</span></div>
+                            <div class="price-per-month">€396.92<span>/месяц</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tariff-notice">
+                <p>Некоторые тарифы недоступны для заказа в данный момент.</p>
+                <p>Приносим свои извинения и просим обратить внимание на другие локации.</p>
+            </div>
+        </section>
+
+        <section class="discounts-section">
+            <div class="discount-info">
+                скидка автоматически<br>
+                применится при<br>
+                оформлении заказа в ЛК
+            </div>
+            <div class="discount-items">
+                <div class="discount-item">
+                    <div class="discount-percent gray">5%</div>
+                    <div class="discount-description">при оплате от 3 месяцев</div>
+                </div>
+                <div class="discount-item">
+                    <div class="discount-percent white">9%</div>
+                    <div class="discount-description">при оплате от 6 месяцев</div>
+                </div>
+                <div class="discount-item">
+                    <div class="discount-percent orange">12%</div>
+                    <div class="discount-description orange">при оплате от 12 месяцев</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vds-os">
+            <h2>операционные системы</h2>
+            <div class="os-grid">
+                <div class="os-card">
+                    <img src="images/os/windows.webp" alt="Windows Server">
+                    <span>Windows Server</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/ubuntu.webp" alt="Ubuntu">
+                    <span>Ubuntu</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/debian.webp" alt="Debian">
+                    <span>Debian</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/centos.webp" alt="CentOS">
+                    <span>CentOS</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/almalinux.webp" alt="AlmaLinux">
+                    <span>AlmaLinux</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/rocky.webp" alt="Rocky Linux">
+                    <span>Rocky Linux</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/freebsd.webp" alt="FreeBSD">
+                    <span>FreeBSD</span>
+                </div>
+                <div class="os-card">
+                    <img src="images/os/astra.webp" alt="Astra Linux">
+                    <span>Astra Linux</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="vds-features">
+            <h2>почему наши серверы?</h2>
+            <div class="features-subtitle">только полезные функции, прозрачное ценообразование</div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/3d/ddos.webp" alt="DDoS Protection" class="feature-image">
+                    <h3 class="feature-title">ddos-защита</h3>
+                    <p class="feature-description">до 2 Тбит/с трафика очистки, до 600 Гбит/с тонкой фильтрации. Защита включена в стоимость и работает постоянно</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/3d/hourly.webp" alt="Hourly Billing" class="feature-image">
+                    <h3 class="feature-title">почасовая оплата</h3>
+                    <p class="feature-description">быстрые облачные серверы, масштабируются на лету. Заказывайте сколько хотите, платите только за то, что нужно</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/3d/hardware.webp" alt="Modern Hardware" class="feature-image">
+                    <h3 class="feature-title">современное оборудование</h3>
+                    <p class="feature-description">современные процессоры AMD Ryzen, накопители в RAID до 10 Гбит/с и NVMe-SSD</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/3d/api.webp" alt="API Management" class="feature-image">
+                    <h3 class="feature-title">простое управление и API</h3>
+                    <p class="feature-description">создание и работа с серверами в личном кабинете. Автоматизация управления с помощью REST API и удобная документация</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-zoom">+</div>
+                    <img src="images/features/3d/backup.webp" alt="Backup" class="feature-image">
+                    <h3 class="feature-title">резервное копирование</h3>
+                    <p class="feature-description">будьте спокойны за сохранность своих данных. Резервное копирование доступно в пару кликов и стоит недорого</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h2 class="footer-column-title">О компании</h2>
+                    <a href="/" class="footer-logo">aëtix</a>
+                    <p class="footer-description">Надежный хостинг-провайдер с 2020 года</p>
+                    <div class="footer-company-info">
+                        <p>Aetix International LTD</p>
+                        <p>Рег. номер: 123456789</p>
+                        <p>347 Barking Road, London</p>
+                        <p>United Kingdom</p>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2 class="footer-column-title">Услуги</h2>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Виртуальные серверы</a>
+                        <a href="#" class="footer-link">Выделенные серверы</a>
+                        <a href="#" class="footer-link">Защита от DDoS</a>
+                        <a href="#" class="footer-link">Резервное копирование</a>
+                        <a href="#" class="footer-link">Мониторинг</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2 class="footer-column-title">Поддержка</h2>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">База знаний</a>
+                        <a href="#" class="footer-link">Статус серверов</a>
+                        <a href="#" class="footer-link">Тикет-система</a>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Блог</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h2 class="footer-column-title">Контакты</h2>
+                    <div class="footer-links">
+                        <a href="tel:88002006013" class="footer-link">8 800 200-60-13</a>
+                        <a href="mailto:support@aetix.net" class="footer-link">support@aetix.net</a>
+                        <a href="#" class="footer-link">Telegram</a>
+                        <a href="#" class="footer-link">Twitter</a>
+                        <a href="#" class="footer-link">Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+</body>
+</html> 
